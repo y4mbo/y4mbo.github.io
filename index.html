@@ -2,35 +2,278 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Jami Asikainen</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/374eff5cf6.js" crossorigin="anonymous"></script>
+  <title>Portfolio Jami Asikainen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<!-----------------------navigaatio--------------------------------->
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Expertise</a>
-            <a href="#">Work</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#hme" class="active">Home</a>
+      <a href="#abt">About</a>
+      <a href="#expe">Expertise</a>
+      <a href="#">Work</a>
+      <a href="#cntct">Contact</a>
+    </nav>
+  </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h1>Jami Asikainen</h1>
-            <h3>IT-Student</h3>
-            <p>20-year-old, tech nerd studying full-time in Haaga-Helia,
-                Pasila, with career interests in IT, tech and media.</p>
+  <!---------------------------home------------------------------------>
+
+  <section class="home" id="hme">
+    <div class="home-content">
+      <h1>Jami Asikainen</h1>
+      <h3>IT-Student</h3>
+      <p>20-year-old, tech nerd studying full-time in Haaga-Helia,
+        Pasila, with career interests in IT, tech and media.</p>
+    </div>
+  </section>
+
+  <section class="arw">
+    <div class="arrow"></div>
+  </section>
+
+  <!---------------------------About--------------------------------->
+
+  <div class="moreabout">
+    <h1>MORE ABOUT ME</h1>
+  </div>
+
+  <div class="about" id="abt">
+    <div class="aboutkuvat">
+      <div class="technology">
+        <img src="kuvat/technologykuva.jpg" class="responsive" alt="Technology" style="width:100%">
+        <div class="caption">
+          <h1>Interests</h1>
+          <p>Since I was a little kid, I’ve always been interested in computers, gaming and visual design.</p>
         </div>
+      </div>
+    </div>
+    <div class="aboutkuvat">
+      <div class="design">
+        <img src="kuvat/designkuva.jpg" class="responsive" alt="Design" style="width:100%">
+        <div class="caption">
+          <h2>Design</h2>
+          <p>Passionate and creative freelance designer, experienced in both 3D and 2D design.</p>
+        </div>
+      </div>
+    </div>
+    <div class="aboutkuvat">
+      <div class="education">
+        <img src="kuvat/pasilaHH.jfif" class="responsive" alt="Education" style="width:100%">
+        <div class="caption">
+          <h3>Education</h3>
+          <p>Currently studying Business Information Technology in Haaga-Helia, Pasila.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="aboutnuoli">
+    <div class="nuoli"></div>
+  </section>
+
+  <!------------------------------expertise------------------------------->
+
+  <section class="exp" id="expe">
+    <div class="exper">
+      <div class="exphead">
+        <h1>Expertise</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tech">
+        <h1>TECH</h1>
+        <div class="compexp">
+          <p>Over a decade of experience with computers</p>
+        </div>
+
+        <div class="excelexp">
+          <p><i class="excicon"><img src="kuvat/excel.png" alt="Excel"></i>
+            Excellent Excel skills</p>
+        </div>
+
+        <div class="pwrexp">
+          <p><i class="pwricon"><img src="kuvat/pwrpoint.png" alt="Powerpoint"></i>
+            Efficient in Powerpoint</p>
+        </div>
+
+        <div class="wrdexp">
+          <p><i class="wrdicon"><img src="kuvat/word.png" alt="Word"></i>
+            Experienced in document editing</p>
+        </div>
+
+        <div class="hrdware">
+          <p><i class="hardware"><img src="kuvat/hrdware.png" alt="Hardware"></i>
+            Hands on work with computer hardware </p>
+        </div>
+
+        <div class="cloudser">
+          <p><i class="cloudservice"><img src="kuvat/cldsrv.png" alt="Cloud Services"></i>
+            Experience with cloud services </p>
+        </div>
+
+
+
+      </div>
+      <div class="design-3d">
+        <h1>3D</h1>
+        <div class="c4d">
+          <p><i class="c4d"><img src="kuvat/c4d.png" alt="Cinema 4D"></i>
+            Cinema 4D, 5+ years of experience </p>
+        </div>
+
+        <div class="blndr">
+          <p><i class="blnder"><img src="kuvat/blender.png" alt="Blender"></i>
+            Blender, Multiple years of experience </p>
+        </div>
+
+
+
+
+      </div>
+      <div class="codeskil">
+        <h1>CODE</h1>
+        <div class="jscode">
+          <p><i class="jscr"><img src="kuvat/jscode.png" class="jsicon" alt="Javascript"></i>
+            Currently learning </p>
+        </div>
+
+        <div class="htmlcode">
+          <p><i class="htmlcd"><img src="kuvat/htmlcode.png" class="htmlicon" alt="HTML Icon"></i>
+            Currently learning </p>
+        </div>
+
+        <div class="csscode">
+          <p><i class="csscd"><img src="kuvat/csscode.png" class="cssicon" alt="CSS Icon"></i>
+            Currently learning </p>
+        </div>
+
+        <div class="pythcode">
+          <p><i class="pythcd"><img src="kuvat/python.png" class="pythicon" alt="Python Icon"></i>
+            Interested </p>
+        </div>
+
+
+
+      </div>
+      <div class="design-adobe">
+        <h1>DESIGN</h1>
+        <div class="aefx">
+          <p><i class="afef"><img src="kuvat/aftereffects.png" class="aeicon" alt="After Effects Icon"></i>
+            Adobe After Effects, 6+ years of experience </p>
+        </div>
+
+        <div class="phsh">
+          <p><i class="photis"><img src="kuvat/photoshop.png" class="psicon" alt="Photoshop Icon"></i>
+            Adobe Photoshop, 6+ years of experience </p>
+        </div>
+
+        <div class="aeil">
+          <p><i class="aeillu"><img src="kuvat/illustrator.png" class="ilicon" alt="Illustrator Icon"></i>
+            Adobe Illustrator, 3+ years of experience </p>
+        </div>
+
+        <div class="aepr">
+          <p><i class="aeprem"><img src="kuvat/premierepro.png" class="pricon" alt="Premiere Icon"></i>
+            Adobe Premiere, 5+ years of experience </p>
+        </div>
+
+        <div class="vegas">
+          <p><i class="sonyveg"><img src="kuvat/vegaspro.png" class="vgsicon" alt="Sony Vegas Icon"></i>
+            Sony VEGAS, 5+ years of experience </p>
+        </div>
+
+
+
+      </div>
+      <div class="learn-more">
+        <p>Always eager to learn!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="expnuoli">
+    <div class="nuoli"></div>
+  </section>
+
+
+
+  <section class="Work" id="wrk">
+    <div class="wrkpage">
+      <div class="wrkheader">
+        <h1>Work</h1>
+        <h2>"PERSONAL PROJECTS OF MINE"</h2>
+        <div class="workbox">
+          <div class="lft">
+            <h4>2D</h4>
+            <h3>LOGOS, GRAPHICS</h3>
+            <b>to be filled later</b>
+          </div>
+          <div class="rght">
+            <h4>3D</h4>
+            <h3>ANIMATIONS, MODELS</h3>
+            <b>To be filled later</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="wrknuoli">
+      <div class="nuoli"></div>
     </section>
 
-    <section class="arw">
-        <div class="arrow"></div>
-    </section>
+  </section>
 
+
+  <section class="Contact" id="cntct">
+    <div class="tytime">
+      <h1>THANKS A LOT FOR VISITING!</h1>
+    </div>
+
+    <div class="connect">
+      <div class="connect-box">
+        <h1>Let's</h1>
+        <h2>Connect!</h2>
+        <a href="mailto: jami.asikainen@myy.haaga-helia.fi" class="mailme">jami.asikainen@myy.haaga-helia.fi</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="#hme">Home</a></li>
+          <li><a href="#abt">About</a></li>
+          <li><a href="#expe">Expertise</a></li>
+          <li><a href="#wrk">Work</a></li>
+          <li><a href="#cntct">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <p>Copyright © 2024 Jami Asikainen - All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
+</html>
 </body>

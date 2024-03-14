@@ -16,12 +16,12 @@ body {
     left: 0;
     width: 100%;
     padding: 25px;
-    background: #152c49;
+    background: #17304f;
     display: flex;
-    justify-content: space-between;
     text-align: center;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -48,6 +48,8 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+/* ------------------------home content------------------------ */
 
 .home-content {
     max-width: 600px;
@@ -86,11 +88,826 @@ body {
     transform: rotate(45deg);
     transition: border-width 150ms ease-in-out;
     margin-left: 50%;
+    margin-top: 2%;
+    margin-bottom: 5%;
   }
 
 .arrow:hover {
     border-bottom-width: 6px;
     border-right-width: 6px;
   }
+
+/*---------------------------about------------------------*/
+
+.about {
+    display:flex;
+    justify-content: space-evenly;
+    min-width: 400px;
+    flex-wrap: wrap;
+    background: #0c1c30;
+}
+
+.moreabout {
+    display: flex;
+    justify-content: center;
+    background: #0c1c30;
+    padding: 5%;
+}
+
+.moreabout h1 {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0px 0px 100px #fff;
+
+}
+
+.responsive {
+    border-radius: 15%;
+    max-width: 350px;
+}
+
+/* ------interests------ */
+
+.technology {
+    max-width: 350px;
+}
+
+.technology h1 {
+    color: #97FFC1;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0px 0px 50px #7effb2ac;
+}
+
+.technology p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 4px 4px 5px #00000080;
+    margin-bottom: 20%;
+}
+
+
+/* ------design------ */
+
+.design {
+    max-width: 350px;
+}
+
+.design h2 {
+    color: #FF87A4;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0px 0px 50px #ff5683;
+}
+
+.design p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 4px 4px 5px #00000080;
+    margin-bottom: 20%;
+}
+
+/* ------education------ */
+
+.education {
+    max-width: 350px;
+}
+
+.education h3 {
+    color: #92D8FF;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0px 0px 50px #64c9ff;
+}
+
+.education p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 4px 4px 5px #00000080;
+    margin-bottom: 20%;
+}
+
+.aboutnuoli {
+    background: #0c1c30;
+}
+
+.nuoli {
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-left: 50%;
+  }
+
+.nuoli:hover {
+    border-bottom-width: 6px;
+    border-right-width: 6px;
+  }
+
+
+/* -------------------------expertise-------------------------- */
+
+.exper {
+    display: flex;
+    justify-content: center;
+    background: #060e18;
+    padding: 5%;
+}
+
+.exphead {
+    color: #FFE872;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0px 0px 100px #FFE872;
+}
+
+
+/*---grid---*/
+
+.container {  
+    display: grid;
+    background: #060e18;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px 10px;
+    padding-bottom: 7%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "design-adobe design-3d tech"
+      "learn-more codeskil tech";
+  }
+  
+/*---------tech-----------*/
+
+.tech { 
+    grid-area: tech;
+    background: #0c1c30; 
+    height: 600px;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+    .tech h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*computers*/
+
+    .compexp p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*excel*/
+
+    .excelexp {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .excelexp i {
+    vertical-align: middle;
+}
+
+/*powerpoint*/
+
+.pwrexp {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .pwrexp i {
+    vertical-align: middle;
+}
+
+/*word*/
+
+.wrdexp {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .wrdexp i {
+    vertical-align: middle;
+}
+
+/*hardware*/
+
+.hrdware {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .hrdware i {
+    vertical-align: middle;
+}
+
+/*cloudservices*/
+
+.cloudser {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .cloudser i {
+    vertical-align: middle;
+}
+
+
+
+
+/*-----------3d--------------*/
+  
+.design-3d { 
+    grid-area: design-3d; 
+    background: #0c1c30; 
+    inline-size: 300px;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.design-3d h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.c4d {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.c4d i {
+    vertical-align: middle;
+}
+ 
+.blndr {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.blndr i {
+    vertical-align: middle;
+}
   
 
+/*----------code------------*/
+
+.codeskil { 
+    grid-area: codeskil; 
+    background: #0c1c30; 
+    inline-size: 300px;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.codeskil h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*javascript code*/
+
+.jscode {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.jscode i {
+    vertical-align: middle;
+}
+
+.jsicon {
+    width: 12%;
+}
+  
+/*HTML code*/
+
+.htmlcode {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.htmlcode i {
+    vertical-align: middle;
+}
+
+.htmlicon {
+    width: 12%;
+}
+
+/*csscode*/
+
+.csscode {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.csscode i {
+    vertical-align: middle;
+}
+
+.cssicon {
+    width: 12%;
+}
+
+/*pythoncode*/
+
+.pythcode {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pythcode i {
+    vertical-align: middle;
+}
+
+.pythicon {
+    width: 12%;
+}
+
+
+/*--------------adobe-------------*/
+
+.design-adobe { 
+    grid-area: design-adobe; 
+    background: #0c1c30; 
+    inline-size: 600px;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.design-adobe h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*photoshop*/
+
+.phsh {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.phsh i {
+    vertical-align: middle;
+}
+
+.psicon {
+    width: 30px;
+}
+
+/*aftereffects*/
+
+.aefx {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aefx i {
+    vertical-align: middle;
+}
+
+.aeicon {
+    width: 30px;
+}
+
+/*illustrator*/
+
+.aeil {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aeil i {
+    vertical-align: middle;
+}
+
+.ilicon {
+    width: 30px;
+}
+
+/*premiere*/
+
+.aepr {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aepr i {
+    vertical-align: middle;
+}
+
+.pricon {
+    width: 30px;
+}
+
+/*vegas*/
+
+.vegas {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vegas i {
+    vertical-align: middle;
+}
+
+.vgsicon {
+    width: 30px;
+}
+
+
+/*-------learnmore----------*/
+  
+.learn-more { 
+    grid-area: learn-more; 
+    background: linear-gradient(to bottom, rgb(0, 119, 255) 0%, rgb(0, 52, 130) 100%);
+    inline-size: 600px;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.learn-more p {
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: center;
+    text-shadow: 
+    0px 0px 120px #fff,
+    0px 0px 90px #fff,
+    0px 0px 30px #70d9ff;
+}
+
+
+/*--nuoli--*/
+
+
+.expnuoli {
+    background: #060e18;
+}
+
+.nuoli {
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-left: 50%;
+  }
+
+
+/*-------------work----------*/
+
+.wrkpage {
+    display: flex;
+    background: #0c1c30;
+    justify-content: center;
+    padding: 5%;
+}
+
+.wrkheader h1 {
+    color: #9c6bff;
+    text-shadow: 
+    0px 0px 120px #9c6bff;
+   font-size: 70px;
+   text-align: center;
+}
+
+.wrkheader h2 {
+    color: #ffffff;
+    text-shadow: 
+    0px 5px 5px #000000;
+   font-size: 15px;
+   font-weight: 500;
+   text-align: center;
+   padding-bottom: 5%;
+}
+
+.wrkheader h4 {
+    color: #4233e2;
+    text-shadow: 
+    0px 0px 120px #6f6aff;
+   font-size: 70px;
+   text-align: center;
+}
+
+.wrkheader h3 {
+    color: #ffffff;
+    text-shadow: 
+    0px 5px 5px #000000;
+   font-size: 30px;
+   font-weight: 600;
+   text-align: center;
+}
+
+.wrkheader b {
+    color: #7979ff;
+    text-shadow: 
+    0px 5px 5px #000000;
+   font-size: 30px;
+   font-weight: 600;
+   margin-left: 20%;
+}
+
+
+.workbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 5%;
+    padding-bottom: 5%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "lft rght";
+    }
+
+
+.lft {
+    background: #0F233A; 
+    inline-size: 500px;
+    height: 600px;
+    border-radius: 25px;
+    padding: 3rem;
+}
+
+.rght {
+    background: #0F233A; 
+    inline-size: 500px;
+    height: 600px;
+    border-radius: 25px;
+    padding: 3rem;
+}
+
+
+
+.wrknuoli {
+    background: #0c1c30;
+}
+
+.nuoli {
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-left: 50%;
+  }
+
+
+/*-----------contact----------*/
+
+.tytime {
+    display: flex;
+    justify-content: center;
+    background: #0F233A; 
+    padding-top: 5%;
+}
+
+.tytime h1 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0px 100px #fff;
+}
+
+.contact {
+    background: #0F233A; 
+}
+
+.connect {
+    background: #0F233A; 
+    padding: 10%;
+}
+
+.connect-box {
+    max-width: 800px;
+    
+
+}
+
+.connect h1 {
+    font-size: 80px;
+    text-align: left;
+    text-shadow: 0px 0px 100px #fff;
+}
+
+.connect h2 {
+    font-size: 80px;
+    text-align: left;
+    color: #2991ff;
+    text-shadow: 0px 0px 50px #5da9ff;
+    text-shadow: 0px 0px 100px #268bff;
+    padding-bottom: 20px;
+}
+
+.mailme {
+    font-size: 30px;
+    color: #42ffbd;
+    text-shadow: 0px 0px 50px #58ff8a;
+}
+
+
+
+/*---footer---*/
+
+.footer{
+    background:#060e18;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:1% 0%;
+    color: #3c4a5c;
+    font-size:15px;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:#3c4a5c;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 25px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+
+
+
+  
+/*---------------responsive------------------*/
+
+
+
+@media (max-width: 650px) {
+
+    .navbar a {
+        display: block;
+    }
+}
+
+
+@media (max-width: 1100px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(5rem, auto)
+         1fr minmax(5rem, auto) auto;
+         grid-template-areas:
+            "design-adobe"
+            "design-3d"
+            "codeskil"
+            "tech"
+            "learn-more";
+            gap: 30px;
+    }
+
+    .design-3d {
+        inline-size: 450px;
+    }
+
+    .codeskil {
+        inline-size: 450px;
+    }
+
+    .design-adobe {
+        inline-size: 450px;
+    }
+
+    .learn-more {
+        inline-size: 450px;
+    }
+
+    .workbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(5rem, auto)
+         1fr minmax(5rem, auto) auto;
+        grid-template-areas:
+            "lft"
+            "rght"
+    }
+
+    .lft {
+        inline-size: 450px;
+    }
+
+    .rght {
+        inline-size: 450px;
+    }
+
+    
+}
+
+
+  
